@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Processing.Lab06.Video.Eclipse/OpenCV/windows64"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="OpenCV/opencv-245.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://docs.opencv.org/java/2.4.5/"/>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Processing.Lab06.Video.Eclipse/OpenCV/windows32"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="OpenCV/gab.opencv.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://docs.opencv.org/java/2.4.5/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="processing/core.jar"/>
 	<classpathentry kind="lib" path="processing.video/video.jar"/>
-	<classpathentry kind="lib" path="processing.video/gstreamer-java.jar"/>
+	<classpathentry kind="lib" path="OpenCV/opencv_processing.jar"/>
+	<classpathentry kind="lib" path="OpenCV/opencv-410.jar"/>
 	<classpathentry kind="lib" path="processing.video/jna.jar"/>
+	<classpathentry kind="lib" path="processing.video/gstreamer-java.jar"/>
+	<classpathentry kind="lib" path="Minim/jl1.0.1.jar"/>
+	<classpathentry kind="lib" path="Minim/minim.jar"/>
+	<classpathentry kind="lib" path="Minim/tritonus_aos.jar"/>
+	<classpathentry kind="lib" path="Minim/jsminim.jar"/>
+	<classpathentry kind="lib" path="Minim/mp3spi1.9.5.jar"/>
+	<classpathentry kind="lib" path="Minim/tritonus_share.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
