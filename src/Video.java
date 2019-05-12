@@ -14,6 +14,7 @@ public class Video extends PApplet
 {
     public OpenCV opencv;
     public Capture video;
+    private final String DESIRED_CAMERA = "640x480";
 
     /**
      * Launch the Processing Application, Calls settings() once, then setup()
@@ -39,18 +40,23 @@ public class Video extends PApplet
         // TODO 3: Change to CASCADE_EYE
         opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);
 
+        String cam = "";
         String[] cams = Capture.list();
         if (cams == null || cams.length == 0) {
             System.out.println("There are no cameras available for capture.");
             exit();
         } else {
             System.out.println("Available cameras for capture:");
+            cam = cams[0];
             for (String camName : cams) {
                 System.out.println("    " + camName);
+                if(camName.contains(DESIRED_CAMERA))
+                {
+                    cam = camName;
+                }
             }
         }
         try {
-            String cam = cams[0];
             System.out.println("Starting camera: " + cam);
             video = new Capture(this, cam);
             video.start();
